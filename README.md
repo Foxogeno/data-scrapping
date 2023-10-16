@@ -6,18 +6,21 @@ Visual Studio Code (VS Code) es un editor de código que te permitirá abrir y e
 Descarga Visual Studio Code desde el sitio oficial.
 Ejecuta el archivo de instalación que descargaste y sigue las instrucciones en pantalla para completar la instalación.
 Una vez instalado, abre Visual Studio Code.
+
 Paso 2: Instalar Python
 
 Para ejecutar el script, necesitarás tener Python instalado. Sigue estos pasos:
 
 Descarga el instalador de Python desde la página oficial de Python. Elige la última versión estable para tu sistema operativo (Windows).
 Ejecuta el archivo de instalación de Python y asegúrate de marcar la casilla "Add Python x.x to PATH" durante la instalación.
+
 Paso 3: Instalar Git
 
 Necesitarás Git para clonar el repositorio de GitHub. Sigue estos pasos:
 
 Descarga Git desde el sitio oficial de Git.
 Ejecuta el archivo de instalación de Git y sigue las instrucciones en pantalla.
+
 Paso 4: Clonar el Repositorio de GitHub
 
 El código se encuentra en un repositorio de GitHub. Sigue estos pasos para obtener una copia del código en tu computadora:
@@ -34,7 +37,7 @@ En la terminal, ejecuta el siguiente comando para clonar el repositorio de GitHu
 
 shell
 Copy code
-git clone https://github.com/tuusuario/turepositorio.git
+git clone [https://github.com/tuusuario/turepositorio.git](https://github.com/Foxogeno/data-scrapping.git)
 Asegúrate de reemplazar tuusuario/turepositorio con la URL real del repositorio que deseas clonar.
 
 Paso 5: Instalar las Bibliotecas Python
