@@ -8,7 +8,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 GECKO_DRIVER_PATH = 'C:/Users/KEV/Desktop/codigo definitico mining data/geckodriver.exe'
 FIREFOX_BINARY_PATH = 'C:/Program Files/Mozilla Firefox/firefox.exe'
-EXCEL_FILENAME = "C:/Users/KEV/Desktop/codigo definitico mining data/Certificate Permit License.xlsx"
+EXCEL_FILENAME = "C:/Users/KEV/Desktop/codigo definitico mining data/Certificate Registration.xlsx"
 SERVICE = Service(GECKO_DRIVER_PATH)
 FIREFOX_OPTIONS = webdriver.FirefoxOptions()
 FIREFOX_OPTIONS.binary_location = FIREFOX_BINARY_PATH
@@ -89,7 +89,7 @@ def main():
             wait = WebDriverWait(driver, 10)
             html_detail_button = wait.until(EC.presence_of_element_located((By.XPATH, f'(//input[@value="HTML Detail"])[{html_detail_index}]')))
             html_detail_button.click()
-            revocation_element = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "//a[@name='CPL']")))
+            revocation_element = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "//a[@name='CX2']")))
             data_table = revocation_element.find_element(By.XPATH, "./following::table[1]")
             th_elements = data_table.find_elements(By.XPATH, ".//th[@scope='row' and @align='left']")
             results = []
@@ -199,7 +199,7 @@ def extract_information(driver, row):
 
 
 def main():
-    wb = openpyxl.load_workbook('C:/Users/KEV/Desktop/codigo definitico mining data/Certificate Permit License.xlsx')
+    wb = openpyxl.load_workbook('C:/Users/KEV/Desktop/codigo definitico mining data/Certificate Registration.xlsx')
     sheet = wb.active
 
     # Add headers in columns D, E, and F
@@ -245,12 +245,12 @@ def main():
 
         count += 1
         if count % 100 == 0:
-            wb.save('C:/Users/KEV/Desktop/codigo definitico mining data/Certificate Permit License.xlsx')
+            wb.save('C:/Users/KEV/Desktop/codigo definitico mining data/Certificate Registration.xlsx')
             print("Cambios guardados en el archivo Excel.")
 
         save_count += 1  # Increment the save count after each result
         if save_count % 10 == 0:  # Save to Excel every 10 results
-            wb.save('C:/Users/KEV/Desktop/codigo definitico mining data/Certificate Permit License.xlsx')
+            wb.save('C:/Users/KEV/Desktop/codigo definitico mining data/Certificate Registration.xlsx')
             print("Cambios guardados en el archivo Excel después de 10 búsquedas.")
 
     wb.save('C:/Users/KEV/Desktop/codigo definitico mining data/test 1.xlsx')
