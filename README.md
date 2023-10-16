@@ -1,60 +1,66 @@
 # data-scrapping
-Paso 1: Descargar e instalar Visual Studio Code
 
-Visual Studio Code (VS Code) es un editor de código que te permitirá abrir y ejecutar el script. Sigue estos pasos:
+Step 1: Download and Install Visual Studio Code
 
-Descarga Visual Studio Code desde el sitio oficial.
-Ejecuta el archivo de instalación que descargaste y sigue las instrucciones en pantalla para completar la instalación.
-Una vez instalado, abre Visual Studio Code.
+Visual Studio Code (VS Code) is a code editor that will allow you to open and run the script. Follow these steps:
 
-Paso 2: Instalar Python
+Download Visual Studio Code from the official website: Visual Studio Code Download.
+Run the downloaded installation file and follow the on-screen instructions to complete the installation.
 
-Para ejecutar el script, necesitarás tener Python instalado. Sigue estos pasos:
+Step 2: Install Python
 
-Descarga el instalador de Python desde la página oficial de Python. Elige la última versión estable para tu sistema operativo (Windows).
-Ejecuta el archivo de instalación de Python y asegúrate de marcar la casilla "Add Python x.x to PATH" durante la instalación.
+To run the script, you'll need to have Python installed. Follow these steps:
 
-Paso 3: Instalar Git
+Download the Python installer from the official Python website: Python Downloads.
+Choose the latest stable version for your operating system (e.g., Windows).
+Run the Python installation file, and during installation, check the "Add Python x.x to PATH" option.
 
-Necesitarás Git para clonar el repositorio de GitHub. Sigue estos pasos:
+Step 3: Install Git
 
-Descarga Git desde el sitio oficial de Git.
-Ejecuta el archivo de instalación de Git y sigue las instrucciones en pantalla.
+You will need Git to clone the GitHub repository. Follow these steps:
 
-Paso 4: Clonar el Repositorio de GitHub
+Download Git from the official Git website: Git Downloads.
+Run the Git installation file and follow the on-screen instructions.
 
-El código se encuentra en un repositorio de GitHub. Sigue estos pasos para obtener una copia del código en tu computadora:
+Step 4: Clone the GitHub Repository
 
-Abre Visual Studio Code.
+The code is located in a GitHub repository. Follow these steps to get a copy of the code on your computer:
 
-Ve al menú "File" y selecciona "Open Folder" (Abrir Carpeta).
+Open Visual Studio Code.
 
-En la ventana de diálogo, crea una carpeta en tu computadora donde deseas guardar el código.
+Go to the "File" menu and select "Open Folder."
 
-Abre una ventana de terminal en Visual Studio Code haciendo clic en "Terminal" en la parte superior y seleccionando "New Terminal".
+In the dialog window, create a folder on your computer where you want to save the code.
 
-En la terminal, ejecuta el siguiente comando para clonar el repositorio de GitHub:
+Open a terminal window in Visual Studio Code by clicking "Terminal" at the top and selecting "New Terminal."
+
+In the terminal, run the following command to clone the GitHub repository:
 
 shell
 Copy code
-git clone [https://github.com/tuusuario/turepositorio.git](https://github.com/Foxogeno/data-scrapping.git)
-Asegúrate de reemplazar tuusuario/turepositorio con la URL real del repositorio que deseas clonar.
+git clone [https://github.com/yourusername/yourrepository.git](https://github.com/Foxogeno/data-scrapping.git)
+Replace yourusername/yourrepository with the actual URL of the repository you want to clone.
 
-Paso 5: Instalar las Bibliotecas Python
+Step 5: Install Python Libraries
 
-Para ejecutar el script, necesitas instalar algunas bibliotecas Python. En la misma terminal de Visual Studio Code, ejecuta los siguientes comandos:
+To run the script, you need to install some Python libraries. In the same terminal in Visual Studio Code, run the following commands:
 
 shell
 Copy code
 pip install openpyxl
 pip install selenium
-Estos comandos instalarán las bibliotecas openpyxl y selenium que son necesarias para el código.
+These commands will install the required openpyxl and selenium libraries for the code.
 
-Paso 6: Ejecutar el Código
+Step 6: Update Code Paths
 
-Ahora que tienes todo configurado, puedes ejecutar el código:
+You will need to update specific paths in the code:
 
-Abre el archivo Python en Visual Studio Code haciendo clic en "File" > "Open File" y seleccionando el archivo Python que descargaste.
-Haz clic en el icono de "Run Python File in Terminal" en la parte superior derecha del editor (parece un triángulo).
-El código se ejecutará y verás los resultados en la terminal.
-¡Eso es todo! Has descargado, configurado y ejecutado el código desde GitHub utilizando Visual Studio Code. Ten en cuenta que es importante reemplazar tuusuario/turepositorio con la URL real del repositorio de GitHub que deseas utilizar.
+In line 9, replace GECKO_DRIVER_PATH with the path to your GeckoDriver executable.
+In lines 11, 202, 248, 253, and 256, replace EXCEL_FILENAME with the desired path where you want to save the Excel files. Make sure to specify the full path, including the file name and extension.
+Step 7: Run the Code
+
+Now that you have everything set up, you can run the code:
+
+Open the Python file in Visual Studio Code by clicking "File" > "Open File" and selecting the downloaded Python file.
+Click the "Run Python File in Terminal" icon in the upper-right corner of the editor (it looks like a triangle).
+The code will run, and you will see the results in the terminal.
